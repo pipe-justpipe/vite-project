@@ -10,7 +10,7 @@ const NavBar = ()=>{
                 <ul className="flex gap-6 items-center">
                     <li>Resume</li>
                     <li>About</li>
-                    <li>Experience</li>
+                    <li>Experience </li>
                     <li>Tech Stack</li>
                     <li>Projects</li>
                     <li>Contact Me</li>
