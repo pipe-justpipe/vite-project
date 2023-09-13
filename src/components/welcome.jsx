@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const welcome = () => {
+const welcome = () => {
   return (
     <div>welcome
         <button>click me!</button>
@@ -8,4 +8,4 @@ export const welcome = () => {
     
   )
 }
-
+export default Welcome
