@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const welcome = () => {
+const Welcome = ({ alert, data }) => {
   return (
-    <div>welcome
-        <button>click me!</button>
+    <div>
+      welcome
+      <button onClick={alert}>click me!</button>
     </div>
-    
-  )
-}
-export default Welcome
+  );
+};
+// WE USE PROP TYPES TO TYPE CHECK I.E CHECK FOR THE TYPE
+export default Welcome;
