@@ -2,6 +2,9 @@ import NavBar from "./components/NavBar";
 import Cards from "./components/Cards";
 import Welcome from "./components/welcome";
 import "./App.css";
+import State from "./components/State";
+import Countbtn from "./components/Countbtn";
+import Effect from "./Effect";
 
 function App() {
   const data = [
@@ -42,10 +45,11 @@ function App() {
   const hey = () => {
     alert("you clicked me");
   };
+  const text ="how are you?";
   return (
     <div className="bg-[#ffcdb2] h-screen">
       <NavBar />
-      <Welcome alert={hey} data={data} />
+      <Welcome alert={hey} statement={text} data={data} />
 
       <div className="flex gap-4 m-5">
         {data.map((item, index) => (
@@ -59,6 +63,9 @@ function App() {
           />
         ))}
       </div>
+      <State/>
+      <Countbtn/>
+      <Effect/>
     </div>
   );
 }
