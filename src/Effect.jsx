@@ -10,6 +10,7 @@ const Effect = () => {
     //if array [] is empty, it is equal to componentDidMount in class component life cycle method
     //it takes in an anonymous function and an array dependency
     //if you want it to run only when count changes, give the array [count]
+    ////
   return (
     <div>Effect</div>
   )
