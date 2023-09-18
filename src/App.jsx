@@ -60,7 +60,7 @@ function App() {
             position={item.position}
             company={item.company}
             name={item.name}
-            image={item.image}
+            image={item.image}//////
           />///////////
         ))}
       </div>
