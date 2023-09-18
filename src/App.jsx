@@ -61,7 +61,7 @@ function App() {
             company={item.company}
             name={item.name}
             image={item.image}
-          />
+          />////
         ))}
       </div>
       <AccountBalanceIcon/>
