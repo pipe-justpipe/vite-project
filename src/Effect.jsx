@@ -15,4 +15,4 @@ const Effect = () => {
     <div>Effect</div>
   )
 }
-export default Effect
+export default Effect//// You must export the effect
