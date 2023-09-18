@@ -5,6 +5,7 @@ import "./App.css";
 import State from "./components/State";
 import Countbtn from "./components/Countbtn";
 import Effect from "./Effect";
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 function App() {
   const data = [
@@ -63,6 +64,7 @@ function App() {
           />
         ))}
       </div>
+      <AccountBalanceIcon/>
       <State/>
       <Countbtn/>
       <Effect/>
