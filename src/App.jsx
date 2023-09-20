@@ -6,8 +6,11 @@ import State from "./components/State";
 import Countbtn from "./components/Countbtn";
 import Effect from "./Effect";
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import { useEffect, useState } from "react";
 
 function App() {
+  const [name, setName] = useState('Piper')
+
   const data = [
     {
       description:
@@ -45,13 +48,18 @@ function App() {
 
   const hey = () => {
     alert("you clicked me");
-  };
+  };   
+  
+  useEffect(() => {
+    document.title = `${name}'s website`;
+  },[name])
+
   const text ="how are you?";
   return (
-    <div className="bg-[#ffcdb2] h-screen">
+    <div className="h-screen">
       <NavBar />
       <Welcome alert={hey} statement={text} data={data} />
-
+      <button onClick={()=>setName('change')} className="bg-red-800 text-white">Click</button>
       <div className="flex gap-4 m-5">
         {data.map((item, index) => (
           <Cards
